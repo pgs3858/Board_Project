@@ -22,3 +22,5 @@ application.properties
 
 # Java compiled files
 *.class
+
+db_dev.mv.db
