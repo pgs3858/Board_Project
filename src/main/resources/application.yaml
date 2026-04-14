@@ -14,18 +14,22 @@ spring:
     prefix: file:src/main/resources/templates/
 
   mvc:
-    hiddenmethod:
+    hidden method:
       filter:
         enabled: true
-  jpa:
-    properties:
-      hibernate:
-        format_sql: true
-        highlight_sql: true
-        use_sql_comments: true
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+#  jpa:
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        highlight_sql: true
+#        use_sql_comments: true
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+
+
+
 
 springdoc:
   default-produces-media-type: application/json; charset=UTF-8
@@ -35,3 +39,15 @@ logging:
     org.hibernate.orm.jdbc.bind: TRACE
     org.hibernate.orm.jdbc.extract: TRACE
     org.springframework.transaction.interceptor: TRACE
+
+
+
+#    콘솔 로그를 컬러와 SQL 상세 로그로 보기 좋게 설정
+#
+#    Thymeleaf 템플릿 변경 즉시 반영
+#
+#    RESTful HTTP 메서드 지원
+#
+#    JPA/Hibernate 디버깅용 SQL 출력 및 자동 스키마 업데이트
+#
+#    SpringDoc(OpenAPI) 기본 JSON 출력 설정
