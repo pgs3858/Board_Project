@@ -1,6 +1,46 @@
+
 spring:
   datasource:
-    url: jdbc:h2:./db_dev;MODE=MySQL
+    url: jdbc:h2:mem:db_dev;MODE=MySQL
     username: sa
     password:
     driver-class-name: org.h2.Driver
+
+  sql:
+    init:
+      mode: always
+
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+        use_sql_comments: true
+
+jwt:
+  secret: mySecretKeyForJWTTokenGenerationThatIsLongEnough1234567890
+  # HS256 알고리즘은 256비트(32바이트) 이상의 secret 필요
+  # 운영 환경에서는 환경변수로 관리할 것
+  expiration: 86400000         # 토큰 유효시간. 단위: 밀리초. 86400000 = 24시간
+
+#    jdbc:h2:./db_dev
+#    → H2 데이터베이스를 사용.
+#    → ./db_dev는 프로젝트 루트 폴더에 파일 형태로 DB를 저장한다는 의미.
+#
+#    H2 DB는 메모리 모드(jdbc:h2:mem:testdb)와 파일 모드(jdbc:h2:./db_dev)가 있음.
+#
+#    ;MODE=MySQL
+#    → H2 DB를 MySQL 호환 모드로 실행.
+#    → MySQL 문법과 비슷하게 SQL을 처리해서 개발 환경에서 MySQL과 유사하게 테스트 가능.
+#
+#    username: sa → 기본 H2 관리자 계정
+#
+#    password: → 비밀번호 없음 (개발용)
+#
+#    주의: 운영 환경에서는 반드시 비밀번호 설정 필

@@ -1,0 +1,70 @@
+spring:
+  application:
+    name: demo
+
+  profiles:
+    active: dev
+
+  output:
+    ansi:
+      enabled: always
+
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
+
+  sql:
+    init:
+      mode: always
+
+  mvc:
+    hidden method:
+      filter:
+        enabled: true
+<<<<<<< HEAD
+#  jpa:
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        highlight_sql: true
+#        use_sql_comments: true
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+
+
+
+=======
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+        use_sql_comments: true
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+    show-sql: true
+>>>>>>> 530656e0134129090ac19f405c884db8cb4b16b8
+
+springdoc:
+  default-produces-media-type: application/json; charset=UTF-8
+
+logging:
+  level:
+    org.hibernate.orm.jdbc.bind: TRACE
+    org.hibernate.orm.jdbc.extract: TRACE
+    org.springframework.transaction.interceptor: TRACE
+
+
+
+#    콘솔 로그를 컬러와 SQL 상세 로그로 보기 좋게 설정
+#
+#    Thymeleaf 템플릿 변경 즉시 반영
+#
+#    RESTful HTTP 메서드 지원
+#
+#    JPA/Hibernate 디버깅용 SQL 출력 및 자동 스키마 업데이트
+#
+#    SpringDoc(OpenAPI) 기본 JSON 출력 설정

@@ -1,0 +1,70 @@
+2026-03-28 22:20:53.380073+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a        user_number bigint not null,\000d\000a        brith_day integer not null,\000d\000a        created_at integer not null,\000d\000a        email varchar(255),\000d\000a        password varchar(255),\000d\000a        role varchar(255),\000d\000a        user_id varchar(255),\000d\000a        user_name varchar(255),\000d\000a        primary key (user_number)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        user_number bigint not null,
+        brith_day integer not null,
+        created_at integer not null,
+        email varchar(255),
+        password varchar(255),
+        role varchar(255),
+        user_id varchar(255),
+        user_name varchar(255),
+        primary key (user_number)
+    ) [42001-240]
+2026-03-28 22:23:41.185886+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a        user_number bigint not null,\000d\000a        brith_day integer,\000d\000a        created_at integer,\000d\000a        email varchar(255),\000d\000a        password varchar(255),\000d\000a        role varchar(255),\000d\000a        user_id varchar(255),\000d\000a        user_name varchar(255),\000d\000a        primary key (user_number)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        user_number bigint not null,
+        brith_day integer,
+        created_at integer,
+        email varchar(255),
+        password varchar(255),
+        role varchar(255),
+        user_id varchar(255),
+        user_name varchar(255),
+        primary key (user_number)
+    ) [42001-240]
+2026-03-28 22:31:04.161961+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a        user_number bigint not null,\000d\000a        brith_day integer,\000d\000a        created_at integer,\000d\000a        email varchar(255),\000d\000a        password varchar(255),\000d\000a        role varchar(255),\000d\000a        user_id varchar(255),\000d\000a        user_name varchar(255),\000d\000a        primary key (user_number)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        user_number bigint not null,
+        brith_day integer,
+        created_at integer,
+        email varchar(255),
+        password varchar(255),
+        role varchar(255),
+        user_id varchar(255),
+        user_name varchar(255),
+        primary key (user_number)
+    ) [42001-240]
+2026-03-28 22:38:35.460329+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a        user_number bigint not null,\000d\000a        birth_day date,\000d\000a        created_at timestamp(6),\000d\000a        email varchar(255),\000d\000a        password varchar(255),\000d\000a        role varchar(255),\000d\000a        user_id varchar(255),\000d\000a        user_name varchar(255),\000d\000a        primary key (user_number)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        user_number bigint not null,
+        birth_day date,
+        created_at timestamp(6),
+        email varchar(255),
+        password varchar(255),
+        role varchar(255),
+        user_id varchar(255),
+        user_name varchar(255),
+        primary key (user_number)
+    ) [42001-240]
+2026-03-28 22:40:17.741707+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a        user_number bigint not null,\000d\000a        birth_day date,\000d\000a        created_at timestamp(6),\000d\000a        email varchar(255),\000d\000a        password varchar(255),\000d\000a        role varchar(255),\000d\000a        user_id varchar(255),\000d\000a        user_name varchar(255),\000d\000a        primary key (user_number)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        user_number bigint not null,
+        birth_day date,
+        created_at timestamp(6),
+        email varchar(255),
+        password varchar(255),
+        role varchar(255),
+        user_id varchar(255),
+        user_name varchar(255),
+        primary key (user_number)
+    ) [42001-240]
